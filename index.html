@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Магазин книжок</title>
+
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="reset.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+<body>
+  <header class="header--container">
+    <nav class="nav-header">
+      <div class="logo">
+        <img src="img/ico/Лого.png" alt="лого" />
+      </div>
+      <ul class="navbar-header">
+        <li><a href="">Акции</a></li>
+        <li><a href="">Каталлог</a></li>
+        <li><a href="">Доставка</a></li>
+        <li><a href="">О магазине</a></li>
+        <li><a href="">Блог</a></li>
+      </ul>
+      <div class="basket">
+        <svg class="icon1" width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg"
+          onclick="toggleHeart(this)">
+          <path
+            d="M8.69557 3.625C5.35365 3.625 2.64355 6.30267 2.64355 9.60625C2.64355 12.273 3.70266 18.6023 14.1279 25.0004C14.3146 25.1138 14.529 25.1738 14.7476 25.1738C14.9662 25.1738 15.1806 25.1138 15.3673 25.0004C25.7925 18.6023 26.8516 12.273 26.8516 9.60625C26.8516 6.30267 24.1415 3.625 20.7996 3.625C17.4577 3.625 14.7476 7.25 14.7476 7.25C14.7476 7.25 12.0375 3.625 8.69557 3.625Z"
+            stroke="#E16A00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <svg class="icon2" width="38" height="37" viewBox="0 0 38 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11.875 6.94312V9.25556H34.4375V13.8331L31.8027 21.974H11.1278L8.15902 1.15918H1.1875V3.47163H6.09098L9.05973 24.2865H33.5445L36.8125 14.1888V6.94312H11.875Z"
+            fill="#E16A00" />
+          <path
+            d="M13.1355 26.618C11.8762 26.6194 10.6688 27.1072 9.77832 27.9742C8.88784 28.8412 8.38693 30.0168 8.3855 31.2429C8.3855 32.4695 8.88594 33.6459 9.77674 34.5132C10.6675 35.3806 11.8757 35.8678 13.1355 35.8678C14.3953 35.8678 15.6035 35.3806 16.4943 34.5132C17.3851 33.6459 17.8855 32.4695 17.8855 31.2429C17.8841 30.0168 17.3832 28.8412 16.4927 27.9742C15.6022 27.1071 14.3948 26.6194 13.1355 26.618ZM13.1355 33.5554C12.6658 33.5554 12.2066 33.4198 11.816 33.1657C11.4255 32.9116 11.121 32.5504 10.9413 32.1279C10.7615 31.7053 10.7145 31.2404 10.8061 30.7918C10.8978 30.3432 11.124 29.9312 11.4561 29.6078C11.7883 29.2844 12.2115 29.0641 12.6722 28.9749C13.1329 28.8857 13.6104 28.9315 14.0444 29.1065C14.4783 29.2815 14.8493 29.5779 15.1102 29.9582C15.3712 30.3385 15.5105 30.7856 15.5105 31.2429C15.5097 31.856 15.2593 32.4438 14.8141 32.8773C14.3688 33.3108 13.7652 33.5547 13.1355 33.5554Z"
+            fill="#E16A00" />
+          <path
+            d="M29.7605 26.618C28.5012 26.6194 27.2938 27.1072 26.4033 27.9742C25.5128 28.8412 25.0119 30.0168 25.0105 31.2429C25.0105 32.4695 25.5109 33.6459 26.4017 34.5132C27.2925 35.3806 28.5007 35.8678 29.7605 35.8678C31.0203 35.8678 32.2285 35.3806 33.1193 34.5132C34.0101 33.6459 34.5105 32.4695 34.5105 31.2429C34.5091 30.0168 34.0082 28.8412 33.1177 27.9742C32.2272 27.1071 31.0198 26.6194 29.7605 26.618ZM29.7605 33.5554C29.2908 33.5554 28.8316 33.4198 28.441 33.1657C28.0505 32.9116 27.746 32.5504 27.5663 32.1279C27.3865 31.7053 27.3395 31.2404 27.4311 30.7918C27.5228 30.3432 27.749 29.9312 28.0811 29.6078C28.4133 29.2844 28.8365 29.0641 29.2972 28.9749C29.7579 28.8857 30.2354 28.9315 30.6694 29.1065C31.1033 29.2815 31.4743 29.5779 31.7352 29.9582C31.9962 30.3385 32.1355 30.7856 32.1355 31.2429C32.1348 31.856 31.8843 32.4438 31.4391 32.8773C30.9938 33.3108 30.3902 33.5547 29.7605 33.5554Z"
+            fill="#E16A00" />
+        </svg>
+      </div>
+      <div class="info-books">
+        <div class="info-books-from-a-z">
+          <h1>Киниги от А до Я</h1>
+          <p>
+            В нашем магазине можно найти книгу на любой вкус. <br />
+            Большой ассортимент. Приятные цены. Интересные <br />
+            сюжеты.
+          </p>
+          <button>Перейти в каталог</button>
+        </div>
+        <div class="books">
+          <h1>Комплект книг Марка Мэнсона</h1>
+          <p>
+            ТОНКОЕ ИСКУССТВО ПОФИГИЗМА. <br />
+            ВСЕ ХРЕНОВО. МУЖСКИЕ ПРАВИЛА.
+          </p>
+          <img class="book" src="img/header/books.png" alt="" />
+          <img class="fon-books" src="img/header/fon-books.png" alt="" />
+        </div>
+      </div>
+  </header>
+  <main>
+    <section class="Hot-revenues">
+      <div class="nav-main">
+        <h1>Горячие поступления</h1>
+        <nav class="navbar-main">
+          <ul>
+            <li><a href="">Фантастика</a></li>
+            <li><a href="">Саморазвитие</a></li>
+            <li><a href="">Детективы</a></li>
+            <li><a href="">Детские</a></li>
+            <li><a href="">Аудиокниги</a></li>
+            <li><a href="">Другие</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="slaider-hot-revenues">
+        <figure>
+          <img src="img/main/hot-revenues/Таргет.png" alt="" />
+          <figcaption class="porainok-xaose">
+            <h3>300 руб.</h3>
+            <h6>Порядок в Хаосе</h6>
+            <p>Константин Коптелов</p>
+            <button>В корзину</button>
+            <svg class="heart-icon" data-id="1" width="30" height="29" viewBox="0 0 30 29" fill="none"
+              xmlns="http://www.w3.org/2000/svg" onclick="toggleHeart(this)">
+              <path
+                d="M8.69557 3.625C5.35365 3.625 2.64355 6.30267 2.64355 9.60625C2.64355 12.273 3.70266 18.6023 14.1279 25.0004C14.3146 25.1138 14.529 25.1738 14.7476 25.1738C14.9662 25.1738 15.1806 25.1138 15.3673 25.0004C25.7925 18.6023 26.8516 12.273 26.8516 9.60625C26.8516 6.30267 24.1415 3.625 20.7996 3.625C17.4577 3.625 14.7476 7.25 14.7476 7.25C14.7476 7.25 12.0375 3.625 8.69557 3.625Z"
+                stroke="#E16A00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/main/hot-revenues/Таргет2.png" alt="" />
+          <figcaption class="smaragdova-book">
+            <h3>255 руб.</h3>
+            <h6>Смарагдова книга</h6>
+            <p>Керстин Гир</p>
+            <button>В корзину</button>
+            <svg class="heart-icon" data-id="2" width="30" height="29" viewBox="0 0 30 29" fill="none"
+              xmlns="http://www.w3.org/2000/svg" onclick="toggleHeart(this)">
+              <path
+                d="M8.69557 3.625C5.35365 3.625 2.64355 6.30267 2.64355 9.60625C2.64355 12.273 3.70266 18.6023 14.1279 25.0004C14.3146 25.1138 14.529 25.1738 14.7476 25.1738C14.9662 25.1738 15.1806 25.1138 15.3673 25.0004C25.7925 18.6023 26.8516 12.273 26.8516 9.60625C26.8516 6.30267 24.1415 3.625 20.7996 3.625C17.4577 3.625 14.7476 7.25 14.7476 7.25C14.7476 7.25 12.0375 3.625 8.69557 3.625Z"
+                stroke="#E16A00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/main/hot-revenues/Таргет3.png" alt="" />
+          <figcaption class="zosya-from-cat-street">
+            <h3>86 руб.</h3>
+            <h6>Зося с улицы кошки</h6>
+            <p>Агнешка Тишка</p>
+            <button>В корзину</button>
+            <svg class="heart-icon" data-id="3" width="30" height="29" viewBox="0 0 30 29" fill="none"
+              xmlns="http://www.w3.org/2000/svg" onclick="toggleHeart(this)">
+              <path
+                d="M8.69557 3.625C5.35365 3.625 2.64355 6.30267 2.64355 9.60625C2.64355 12.273 3.70266 18.6023 14.1279 25.0004C14.3146 25.1138 14.529 25.1738 14.7476 25.1738C14.9662 25.1738 15.1806 25.1138 15.3673 25.0004C25.7925 18.6023 26.8516 12.273 26.8516 9.60625C26.8516 6.30267 24.1415 3.625 20.7996 3.625C17.4577 3.625 14.7476 7.25 14.7476 7.25C14.7476 7.25 12.0375 3.625 8.69557 3.625Z"
+                stroke="#E16A00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/main/hot-revenues/Таргет4.png" alt="" />
+          <figcaption class="motivation">
+            <h3>214 руб.</h3>
+            <h6>Мотиватор</h6>
+            <p>Наталия Зотова</p>
+            <button>В корзину</button>
+            <svg class="heart-icon" data-id="4" width="30" height="29" viewBox="0 0 30 29" fill="none"
+              xmlns="http://www.w3.org/2000/svg" onclick="toggleHeart(this)">
+              <path
+                d="M8.69557 3.625C5.35365 3.625 2.64355 6.30267 2.64355 9.60625C2.64355 12.273 3.70266 18.6023 14.1279 25.0004C14.3146 25.1138 14.529 25.1738 14.7476 25.1738C14.9662 25.1738 15.1806 25.1138 15.3673 25.0004C25.7925 18.6023 26.8516 12.273 26.8516 9.60625C26.8516 6.30267 24.1415 3.625 20.7996 3.625C17.4577 3.625 14.7476 7.25 14.7476 7.25C14.7476 7.25 12.0375 3.625 8.69557 3.625Z"
+                stroke="#E16A00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/main/hot-revenues/Таргет5.png" alt="" />
+          <figcaption class="without-a-mask">
+            <h3>214 руб.</h3>
+            <h6>Мотиватор</h6>
+            <p>Наталия Зотова</p>
+            <button>В корзину</button>
+            <svg class="heart-icon" data-id="5" width="30" height="29" viewBox="0 0 30 29" fill="none"
+              xmlns="http://www.w3.org/2000/svg" onclick="toggleHeart(this)">
+              <path
+                d="M8.69557 3.625C5.35365 3.625 2.64355 6.30267 2.64355 9.60625C2.64355 12.273 3.70266 18.6023 14.1279 25.0004C14.3146 25.1138 14.529 25.1738 14.7476 25.1738C14.9662 25.1738 15.1806 25.1138 15.3673 25.0004C25.7925 18.6023 26.8516 12.273 26.8516 9.60625C26.8516 6.30267 24.1415 3.625 20.7996 3.625C17.4577 3.625 14.7476 7.25 14.7476 7.25C14.7476 7.25 12.0375 3.625 8.69557 3.625Z"
+                stroke="#E16A00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="Hot-revenues">
+      <div class="nav-main">
+        <h1>Распродажа</h1>
+      </div>
+      <div class="slaider-hot-revenues">
+        <figure>
+          <img src="img/main/hot-revenues/Таргет.png" alt="" />
+          <figcaption class="porainok-xaose-1-1">
+            <h3>300 руб.</h3>
+            <h6>Порядок в Хаосе</h6>
+            <p>Константин Коптелов</p>
+            <button>В корзину</button>
+            <svg class="heart-icon" data-id="1" width="30" height="29" viewBox="0 0 30 29" fill="none"
+              xmlns="http://www.w3.org/2000/svg" onclick="toggleHeart(this)">
+              <path
+                d="M8.69557 3.625C5.35365 3.625 2.64355 6.30267 2.64355 9.60625C2.64355 12.273 3.70266 18.6023 14.1279 25.0004C14.3146 25.1138 14.529 25.1738 14.7476 25.1738C14.9662 25.1738 15.1806 25.1138 15.3673 25.0004C25.7925 18.6023 26.8516 12.273 26.8516 9.60625C26.8516 6.30267 24.1415 3.625 20.7996 3.625C17.4577 3.625 14.7476 7.25 14.7476 7.25C14.7476 7.25 12.0375 3.625 8.69557 3.625Z"
+                stroke="#E16A00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/main/hot-revenues/Таргет2.png" alt="" />
+          <figcaption class="smaragdova-book-2-2">
+            <h3>255 руб.</h3>
+            <h6>Смарагдова книга</h6>
+            <p>Керстин Гир</p>
+            <button>В корзину</button>
+            <svg class="heart-icon" data-id="2" width="30" height="29" viewBox="0 0 30 29" fill="none"
+              xmlns="http://www.w3.org/2000/svg" onclick="toggleHeart(this)">
+              <path
+                d="M8.69557 3.625C5.35365 3.625 2.64355 6.30267 2.64355 9.60625C2.64355 12.273 3.70266 18.6023 14.1279 25.0004C14.3146 25.1138 14.529 25.1738 14.7476 25.1738C14.9662 25.1738 15.1806 25.1138 15.3673 25.0004C25.7925 18.6023 26.8516 12.273 26.8516 9.60625C26.8516 6.30267 24.1415 3.625 20.7996 3.625C17.4577 3.625 14.7476 7.25 14.7476 7.25C14.7476 7.25 12.0375 3.625 8.69557 3.625Z"
+                stroke="#E16A00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/main/hot-revenues/Таргет3.png" alt="" />
+          <figcaption class="zosya-from-cat-street-3-3">
+            <h3>86 руб.</h3>
+            <h6>Зося с улицы кошки</h6>
+            <p>Агнешка Тишка</p>
+            <button>В корзину</button>
+            <svg class="heart-icon" data-id="3" width="30" height="29" viewBox="0 0 30 29" fill="none"
+              xmlns="http://www.w3.org/2000/svg" onclick="toggleHeart(this)">
+              <path
+                d="M8.69557 3.625C5.35365 3.625 2.64355 6.30267 2.64355 9.60625C2.64355 12.273 3.70266 18.6023 14.1279 25.0004C14.3146 25.1138 14.529 25.1738 14.7476 25.1738C14.9662 25.1738 15.1806 25.1138 15.3673 25.0004C25.7925 18.6023 26.8516 12.273 26.8516 9.60625C26.8516 6.30267 24.1415 3.625 20.7996 3.625C17.4577 3.625 14.7476 7.25 14.7476 7.25C14.7476 7.25 12.0375 3.625 8.69557 3.625Z"
+                stroke="#E16A00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/main/hot-revenues/Таргет4.png" alt="" />
+          <figcaption class="motivation-4-4">
+            <h3>214 руб.</h3>
+            <h6>Мотиватор</h6>
+            <p>Наталия Зотова</p>
+            <button>В корзину</button>
+            <svg class="heart-icon" data-id="4" width="30" height="29" viewBox="0 0 30 29" fill="none"
+              xmlns="http://www.w3.org/2000/svg" onclick="toggleHeart(this)">
+              <path
+                d="M8.69557 3.625C5.35365 3.625 2.64355 6.30267 2.64355 9.60625C2.64355 12.273 3.70266 18.6023 14.1279 25.0004C14.3146 25.1138 14.529 25.1738 14.7476 25.1738C14.9662 25.1738 15.1806 25.1138 15.3673 25.0004C25.7925 18.6023 26.8516 12.273 26.8516 9.60625C26.8516 6.30267 24.1415 3.625 20.7996 3.625C17.4577 3.625 14.7476 7.25 14.7476 7.25C14.7476 7.25 12.0375 3.625 8.69557 3.625Z"
+                stroke="#E16A00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="img/main/hot-revenues/Таргет5.png" alt="" />
+          <figcaption class="without-a-mask-5-5">
+            <h3>214 руб.</h3>
+            <h6>Мотиватор</h6>
+            <p>Наталия Зотова</p>
+            <button>В корзину</button>
+            <svg class="heart-icon" data-id="5" width="30" height="29" viewBox="0 0 30 29" fill="none"
+              xmlns="http://www.w3.org/2000/svg" onclick="toggleHeart(this)">
+              <path
+                d="M8.69557 3.625C5.35365 3.625 2.64355 6.30267 2.64355 9.60625C2.64355 12.273 3.70266 18.6023 14.1279 25.0004C14.3146 25.1138 14.529 25.1738 14.7476 25.1738C14.9662 25.1738 15.1806 25.1138 15.3673 25.0004C25.7925 18.6023 26.8516 12.273 26.8516 9.60625C26.8516 6.30267 24.1415 3.625 20.7996 3.625C17.4577 3.625 14.7476 7.25 14.7476 7.25C14.7476 7.25 12.0375 3.625 8.69557 3.625Z"
+                stroke="#E16A00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="container-box-navbar">
+      <div class="box-navbar">
+        <h1>Каталог</h1>
+        <h2>Книги</h2>
+        <h2>Аудиокниги</h2>
+        <h2>Электронные книги</h2>
+        <h2>Игрушки, творчество</h2>
+        <h2>Книжные аксессуары</h2>
+        <h2>Блокноты</h2>
+        <h2>Настольные игрые</h2>
+        <h2>Подарки</h2>
+        <h2>Акции</h2>
+      </div>
+    </section>
+    <section class="container-about-the-store">
+      <div class="about-the-store">
+        <h1 class="about-the-store-h1">О магазине</h1>
+        <div class="statistiс">
+          <p class="numbers">35</p>
+          <p class="signature">Филиалов по всей стране</p>
+          <p class="numbers">898</p>
+          <p class="signature">Товаров в каталоге</p>
+          <p class="numbers">8659</p>
+          <p class="signature">Покупателей</p>
+          <p class="numbers">72</p>
+          <p class="signature">Часоа доставка по городам</p>
+        </div>
+      </div>
+    </section>
+    <section class="delivery">
+      <div class="delivery-statistic">
+        <h1>Доставка</h1>
+        <p>Работаем без праздников и выходных! Жители Москвы могут получить заказ уже в день его оформления. Клиенты из
+          других городов России могут получить заказ в течение 1-5 дней в зависимости от местонахождения населенного
+          пункта и выбранного способа доставки. Заказы на сумму свыше 1000 руб доставляются бесплатно*. Доступные
+          способы, точные сроки и стоимость доставки Вы можете увидеть во время оформления заказа в корзине заказа,
+          после выбора города доставки.
+        </p>
+        <a href="">Подробнее</a>
+      </div>
+    </section>
+    <section class="watch-us-on-social-networks">
+      <h1>Следите за нами в социальных сетях</h1>
+      <div class="ico">
+        <a href=""><img class="social-icon" src="img/ico/akar-icons_facebook-fill.svg" alt=""></a>
+        <a href=""><img class="social-icon" src="img/ico/akar-icons_instagram-fill.svg" alt=""></a>
+        <a href=""><img class="social-icon" src="img/ico/akar-icons_twitter-fill.svg" alt=""></a>
+        <a href=""><img class="social-icon" src="img/ico/cib_vk.svg" alt=""></a>
+        <a href=""><img class="social-icon" src="img/ico/akar-icons_youtube-fill.svg" alt=""></a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="logo">
+        <img src="img/ico/Лого-белый.png" alt="Логотип">
+      </div>
+      <div class="links">
+        <div class="popular">
+          <nav>
+            <ul>
+              <li>Популярное</li>
+              <li>Программирование</li>
+              <li>Книги для детей</li>
+              <li>Психология</li>
+              <li>Бизнес</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="information">
+          <nav>
+            <ul>
+              <li>Информация</li>
+              <li>Доставка</li>
+              <li>Оплата</li>
+              <li>Психология</li>
+              <li>O магазине</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="help">
+          <nav>
+            <ul>
+              <li>Помощь</li>
+              <li>Контакты</li>
+              <li>Возврат товара</li>
+              <li>Психология</li>
+              <li>Помощь покупателю</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="phone-button">
+        <p>+7 932 193 56 23</p>
+        <button>Заказать звонок</button>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

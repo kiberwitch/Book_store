@@ -1,0 +1,619 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(255, 228, 196, 0.548);
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.header--container {
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-header a {
+  color: #241400;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-header a:hover {
+  color: rgb(173, 135, 96);
+}
+
+.basket {
+  display: flex;
+  align-items: center;
+}
+
+.icon1,
+.icon2 {
+  margin: 0 20px;
+  transition: transform 0.3s ease;
+}
+
+.icon1:hover,
+.icon2:hover {
+  transform: scale(1.3);
+}
+
+.navbar-header li {
+  list-style: none;
+  padding: 0 1.5rem;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 196.19%;
+  color: #241400;
+}
+
+.logo {
+  margin: 0 2rem;
+}
+
+.info-books {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.books h1 {
+  position: absolute;
+  top: 80%;
+  right: 9.5%;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 196.19%;
+  color: #ffffff;
+}
+
+.books p {
+  position: absolute;
+  top: 85%;
+  right: 10%;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 96.69%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.book {
+  position: absolute;
+  top: 13%;
+  right: 7%;
+}
+
+.info-books-from-a-z {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.info-books-from-a-z h1 {
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 196.19%;
+  color: #241400;
+}
+
+.info-books-from-a-z p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 196.19%;
+  color: #241400;
+  text-align: left;
+}
+
+.info-books-from-a-z button {
+  width: 200px;
+  margin-top: 10px;
+  border: 3px solid #e16a00;
+  padding: 10px 15px;
+  background-color: #e16a00;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.info-books-from-a-z button:hover {
+  transform: scale(1.1);
+}
+
+/* Стили для Hot-revenues */
+.Hot-revenues {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1272px;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.nav-main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav-main h1 {
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 196.19%;
+  color: #241400;
+}
+
+.navbar-main {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-main a {
+  color: #241400;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-main a:hover {
+  color: rgb(173, 135, 96);
+}
+
+.navbar-main li {
+  list-style: none;
+  padding: 0 2rem;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 196.19%;
+  color: #241400;
+}
+
+.navbar-main ul {
+  display: flex;
+  justify-content: center;
+}
+
+.slaider-hot-revenues {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.porainok-xaose,
+.smaragdova-book,
+.zosya-from-cat-street,
+.motivation,
+.without-a-mask,
+.porainok-xaose-1-1,
+.smaragdova-book-2-2,
+.zosya-from-cat-street-3-3,
+.motivation-4-4,
+.without-a-mask-5-5 {
+  position: relative;
+  bottom: 150px;
+  left: 45px;
+  text-align: left;
+}
+
+.porainok-xaose h3,
+.smaragdova-book h3,
+.zosya-from-cat-street h3,
+.motivation h3,
+.without-a-mask h3,
+.porainok-xaose-1-1 h3,
+.smaragdova-book-2-2 h3,
+.zosya-from-cat-street-3-3 h3,
+.motivation-4-4 h3,
+.without-a-mask-5-5 h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 196.19%;
+  color: #241400;
+}
+
+.porainok-xaose h6,
+.smaragdova-book h6,
+.zosya-from-cat-street h6,
+.motivation h6,
+.without-a-mask h6,
+.porainok-xaose-1-1 h6,
+.smaragdova-book-2-2 h6,
+.zosya-from-cat-street-3-3 h6,
+.motivation-4-4 h6,
+.without-a-mask-5-5 h6 {
+  font-weight: 700;
+  font-size: 12px;
+  color: #241400;
+}
+
+.porainok-xaose p,
+.smaragdova-book p,
+.zosya-from-cat-street p,
+.motivation p,
+.without-a-mask p,
+.porainok-xaose-1-1 p,
+.smaragdova-book-2-2 p,
+.zosya-from-cat-street-3-3 p,
+.motivation-4-4 p,
+.without-a-mask-5-5 p {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #241400;
+}
+
+.porainok-xaose button,
+.smaragdova-book button,
+.zosya-from-cat-street button,
+.motivation button,
+.without-a-mask button,
+.porainok-xaose-1-1 button,
+.smaragdova-book-2-2 button,
+.zosya-from-cat-street-3-3 button,
+.motivation-4-4 button,
+.without-a-mask-5-5 button {
+  background: #e16a00;
+  color: white;
+  box-shadow: 0px 3px 8px rgba(225, 106, 0, 0.19);
+  border-radius: 3px;
+  padding: 5px 10px;
+  transition: transform 0.3s ease;
+}
+
+.porainok-xaose button:hover,
+.smaragdova-book button:hover,
+.zosya-from-cat-street button:hover,
+.motivation button:hover,
+.without-a-mask button:hover,
+.porainok-xaose-1-1 button:hover,
+.smaragdova-book-2-2 button:hover,
+.zosya-from-cat-street-3-3 button:hover,
+.motivation-4-4 button:hover,
+.without-a-mask-5-5 button:hover {
+  transform: scale(1.2);
+}
+
+.heart-icon {
+  position: absolute;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: fill 0.3s, stroke 0.3s;
+}
+
+.heart-icon.active {
+  fill: #e16a00;
+  stroke: #e16a00;
+  animation: pulse 0.3s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Стили для container-box-navbar */
+.container-box-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.box-navbar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+.box-navbar h1 {
+  grid-column: 1 / -1;
+  margin-bottom: 20px;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 196.19%;
+  color: #000000;
+  text-align: center;
+}
+
+.box-navbar h2 {
+  background: #ffffff;
+  box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.box-navbar h2:hover {
+  transform: scale(1.1);
+}
+
+.container-about-the-store {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-the-store-h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 196.19%;
+  color: #241400;
+  margin-top: 50px;
+}
+
+.about-the-store {
+  display: flex;
+  flex-direction: column;
+}
+
+.statistiс {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.signature {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 196.19%;
+  color: #241400;
+  margin: 0 40px;
+}
+
+.numbers {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 196.19%;
+  color: #241400;
+}
+
+.delivery {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.delivery-statistic {
+  width: 1300px;
+}
+
+.delivery h1 {
+  margin-top: 50px;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 196.19%;
+  color: #241400;
+  margin-bottom: 40px;
+}
+
+.delivery p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 196.19%;
+  color: #241400;
+}
+
+.delivery a {
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 196.19%;
+  transition: color 0.3s;
+  color: #241400;
+}
+
+.delivery a:hover {
+  color: rgba(173, 134, 96, 0.733);
+}
+
+.watch-us-on-social-networks {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.watch-us-on-social-networks h1 {
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 196.19%;
+  display: flex;
+  align-items: center;
+  color: #241400;
+  margin-bottom: 50px;
+}
+
+.social-icon {
+  filter: brightness(1) invert(0);
+  transition: filter 0.3s ease; /* Плавное изменение */
+}
+
+.social-icon:hover {
+  filter: brightness(0) invert(1); /* Цвет при наведении (белый) */
+}
+
+footer {
+  margin-top: 100px;
+  width: 100%;
+  background-color: #391f00;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  flex: 1;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex: 2;
+  text-align: left;
+}
+
+.phone-button {
+  flex: 1;
+  text-align: right;
+}
+
+.popular li,
+.information li,
+.help li {
+  padding: 10px 0;
+}
+
+.popular li:first-child,
+.information li:first-child,
+.help li:first-child {
+  font-weight: bold;
+}
+
+.phone-button p {
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.phone-button button {
+  border: 3px solid #e16a00;
+  background-color: #00000000;
+  color: #e16a00;
+  padding: 10px 20px;
+  transition: transform 0.3s ease;
+}
+.phone-button button:hover {
+  transform: scale(1.2);
+}
+
+/* Медиазапросы */
+@media (max-width: 1200px) {
+  .books h1 {
+    font-size: 14px;
+  }
+
+  .books p {
+    font-size: 12px;
+  }
+
+  .info-books-from-a-z h1 {
+    font-size: 1.5rem;
+  }
+
+  .box-navbar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-header,
+  .navbar-main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .books {
+    justify-content: center;
+  }
+
+  .books h1,
+  .books p {
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .book,
+  .fon-books {
+    max-width: 100%;
+  }
+
+  .info-books-from-a-z {
+    margin: 10px;
+  }
+
+  .info-books-from-a-z h1 {
+    font-size: 1.2rem;
+  }
+
+  .info-books-from-a-z p {
+    font-size: 0.9rem;
+  }
+
+  .box-navbar {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    margin: 0 1rem;
+  }
+
+  .icon1,
+  .icon2 {
+    margin: 0 10px;
+  }
+
+  .books h1 {
+    font-size: 12px;
+  }
+
+  .books p {
+    font-size: 10px;
+  }
+
+  .info-books-from-a-z h1 {
+    font-size: 1rem;
+  }
+
+  .info-books-from-a-z p {
+    font-size: 0.8rem;
+  }
+
+  .box-navbar h2 {
+    padding: 15px;
+  }
+}
