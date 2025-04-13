@@ -34,6 +34,6 @@
 
 ---
 
-🔗 **Ссылка на проект:** [ https://kiberwitch.github.io/Portfolio_Project2/]
+🔗 **Ссылка на проект:** [https://kiberwitch.github.io/Book_store/]
 
 
